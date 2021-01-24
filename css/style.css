@@ -1,0 +1,302 @@
+/************** Default styles ***********************/
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Karla', sans-serif;
+  line-height: 1.2;
+}
+
+input {
+  font-family: 'Karla', sans-serif;
+}
+
+/************* Typography Styles ********************/
+
+h1, h2, h3, h4 {
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+a, p {
+  color: #444;
+}
+
+a {
+  text-decoration: none;
+}
+
+/********************* Layout styles *****************/
+
+/* Step 2 */
+section {
+  width: 625px;
+  float: left;
+}
+/* Step 2 cont */
+aside {
+  width: 300px;
+  float: right;
+}
+/* Step 1 */
+main, header {
+  width: 1000px;
+  padding: 0 20px;
+  margin: auto;
+}
+
+/********************* Header styles ****************/
+
+header {
+  margin: 50px auto 30px;
+}
+
+/* Step 3 */
+header nav {
+  margin-top: 20px;
+  height: 40px;
+  border-color:#ddd;
+  border-style: solid;
+  border-width: 2px 0;
+}
+
+/* Step 4 */
+header nav ul li {
+  display: inline;
+  text-transform: uppercase;
+  line-height: 40px;
+  font-size: 14px;
+  text-transform: uppercase;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* Step 5 */
+header nav ul li:last-child {
+  float: right;
+}
+
+/* Step 6 */
+header nav ul li:last-child a {
+  color: #D10B0C;
+}
+
+/********************** BONUS TRANSITION ***************/
+header nav ul li a:hover {
+  color: #D10B0C;
+  transition: color 0.2s ease;
+}
+
+header nav ul li a:hover {
+  width: 300px;
+}
+
+
+/************************ Article styles ******************/
+
+article {
+  padding-bottom: 20px;
+}
+
+article img {
+  margin-bottom: 10px;
+}
+
+article span, article span a {
+  color: #888;
+  font-size: 14px;
+}
+
+article p {
+  margin-top: 10px;
+}
+
+article hr {
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ddd;
+  margin: 30px 0 0;
+}
+
+article.small {
+  overflow: auto;
+  padding-top: 30px;
+  border-bottom: 1px solid #ddd;
+  float: right;
+}
+
+/* Step 11 */
+article.small img {
+  margin-right: 20px;
+  float: left;
+}
+
+/* Step 7 */
+article > h2 {
+  font-size: 24px;
+}
+
+/* Step 14 */
+article > h2 a:hover {
+  color: #D10b0C;
+}
+
+/* Step 15 */
+a.next {
+  float: right;
+  padding:20px 30px;
+  border: 2px solid #ddd; /* {border width in px}{border style}{border-color}*/
+  margin: 30px 0;
+  text-transform: uppercase;
+}
+
+/***************** Search form styles *****************/
+
+form.search {
+  position: relative;
+  margin-bottom: 20px;
+}
+
+form.search input[type="text"] {
+  width: 100%;
+  background-color: white;
+  border: 1px solid #ddd;
+  padding: 10px;
+  font-size: 14px;
+  outline: none !important;
+}
+
+form.search input[type="submit"] {
+  font-size: 0;
+  background: transparent;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  height: 39px;
+  width: 39px;
+  background-image: url(../images/search.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  position: absolute;
+  right: 0;
+  top: 0;
+  cursor: pointer;
+}
+
+/***************** Subscribe section styles *****************/
+
+/* Step 8 */
+div.subscribe {
+  background-color: #ce2027;
+  color: #fff;
+  padding: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+div.subscribe form {
+  position: relative;
+}
+
+div.subscribe input[type="text"] {
+  background-color: transparent;
+  border-width: 0 0 1px;
+  border-color: #fff;
+  border-style: solid;
+  color: #fff;
+  font-size: 14px;
+  padding: 10px 0;
+  width: 100%;
+  outline: none !important;
+}
+
+div.subscribe input[type="submit"] {
+  position: absolute;
+  bottom: 10px;
+  right: 0;
+  background: transparent;
+  text-transform: uppercase;
+  color: #fff;
+  border: 0;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  cursor: pointer;
+}
+
+/*To style placeholder text color for input box with Chrome vendor prefix*/
+div.subscribe input[type="text"]::-webkit-input-placeholder {
+ color: #fff;
+}
+
+div.subscribe h3 {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+div.subscribe p {
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/********************** Categories div styles **************/
+
+/* Step 12 */
+div.categories ul li {
+  float: left;
+  border: 2px solid #ddd; /* {border width in px}{border style}{border-color}*/
+  /* border-width: 2px;
+  border-style: solid;
+  border-color: #ddd; */
+  padding: 7px;
+  margin: 4px;
+  font-size: 12px;
+}
+
+/* Step 13 */
+div.categories ul li:hover {
+  background-color: #D10B0C;
+  border-radius: 5px;
+
+}
+
+div.categories ul li:hover a {
+  color: #fff;
+}
+
+/******************* Footer styles ****************/
+
+footer {
+  background-color: #eaede6;
+  clear: both;
+  font-size: 12px;
+  text-align: center;
+  padding: 50px 0;
+  color: #555;
+  margin-top: 30px;
+}
+
+/* Step 10*/
+footer img {
+  margin-bottom: 20px;
+  width: 180px;
+}
+
+footer nav ul {
+  margin-bottom: 10px;
+}
+/* Step 9 */
+footer nav ul li {
+  display: inline;
+  margin-right: 10px;
+   text-transform: uppercase;
+}
+
+footer nav ul li:last-child {
+  margin: 0;
+}
